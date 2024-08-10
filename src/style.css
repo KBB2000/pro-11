@@ -1,0 +1,277 @@
+
+.dashboard-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .dashboard-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .user-info {
+    font-size: 1.2em;
+  }
+  
+  .user-info p {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .user-info strong {
+    color: #000;
+  }
+  
+  @media (max-width: 600px) {
+    .dashboard-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .dashboard-title {
+      font-size: 1.5em;
+    }
+  
+    .user-info {
+      font-size: 1em;
+    }
+  }
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .sign-up-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sign-up-left {
+    background-color: #1a1a2e;
+    color: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .sign-up-left h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .sign-up-left p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .community-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .community-info img {
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .sign-up-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .sign-up-form {
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sign-up-form h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+  
+  .sign-up-form p {
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #666;
+  }
+  
+  .sign-up-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .sign-up-form .terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .sign-up-form .terms input {
+    margin-right: 10px;
+  }
+  
+  .sign-up-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sign-up-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .sign-up-container {
+      flex-direction: column;
+    }
+  
+    .sign-up-left, .sign-up-right {
+      flex: none;
+      width: 100%;
+    }
+  
+    .sign-up-left {
+      padding: 20px;
+    }
+  
+    .sign-up-form {
+      padding: 20px;
+    }
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .sign-in-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+  }
+  
+  .sign-in-left {
+    background-color: #1c1c1c;
+    color: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  
+  .sign-in-left h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .sign-in-left p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+  
+  .sign-in-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  
+  .sign-in-form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sign-in-form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .sign-in-form p {
+    margin-bottom: 20px;
+  }
+  
+  .sign-in-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .sign-in-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sign-in-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .community-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .community-info img {
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .sign-in-container {
+      flex-direction: column;
+    }
+  
+    .sign-in-left, .sign-in-right {
+      flex: none;
+      width: 100%;
+    }
+  
+    .sign-in-left {
+      padding: 20px;
+    }
+  
+    .sign-in-form {
+      padding: 20px;
+    }
+  }
+  

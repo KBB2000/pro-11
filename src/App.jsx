@@ -1,22 +1,20 @@
-import React from "react";
-import Signup from "./Components/Signup";
-import Login from "./Components/Login";
-import Home from "./Pages/Home";
-import { Routes, Route } from "react-router-dom";
-import ProtectRoute from "./Services/ProtectRoute";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import SignUp from "./container/SignUp";
+import LogIn from './container/LogIn';
+import Dashboard from './Dashboard';
+import Header from './container/Header';
 
 const App = () => {
-  
   return (
-    <div>
-      <Routes>
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
-        {/* <Route path="/" element={<ProtectRoute />}> */}
-          <Route path="/home" element={<Home />} />
-        {/* </Route> */}
-      </Routes>
-    </div>
+    <>
+      <Header  />
+    <Routes>
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<LogIn />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+    </Routes>
+    </>
   );
 };
 
